@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+        }
+
+        .container {
+            width: 750px;
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            border: 0px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+            color: #003087;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 6px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e8f0fe;
+        }
+
+        .total {
+            text-align: right;
+        }
+
+        .footer {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+
+            body {
+                font-size: 12px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 10mm;
+            }
+
+            h1,
+            h2 {
+                font-size: 18px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <h1 style="text-align: left;"><img src="https://www.paypalobjects.com/digitalassets/c/website/logo/full-text/pp_fc_hl.svg"></h1>
+        <p><br></p>
+        <hr><!-- Payment Confirmation -->
+        <p style="line-height: 1.5; text-align: center;"><strong><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">&quot;Your Payment Is Confirmed&quot;</span></strong></p>
+        <p style="line-height: 1.5;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Hello ##recipient-email##,</span></p>
+        <p style="line-height: 1.5;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Your payment of <strong>USD 778.24</strong> has been successfully completed.</span></p>
+        <p style="line-height: 1.5;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">If unauthorized, please contact our billing support team within 24 hours.</span></p>
+        <hr>
+        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;"><strong>Billing Helpdesk :##toll-free-number##</strong></span></p>
+        <hr><!-- Purchased Items -->
+        <h2><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;"><br></span></h2>
+        <h2><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Purchased Items</span></h2>
+        <table style="border-collapse: collapse; border: 0px solid rgb(0, 0, 0); width: 100%; margin-left: calc(0%);">
+            <thead>
+                <tr>
+                    <th style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Items</span></th>
+                    <th style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Quantity</span></th>
+                    <th style="border: 0px solid rgb(0, 0, 0);">
+                        <div style="text-align: right;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Price</span></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left; border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">PlayStation 5 Pro Console (30th Anniversary Limited Edition)</span></td>
+                    <td style="text-align: center; border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">1</span></td>
+                    <td style="text-align: right; border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">$778.24</span></td>
+                </tr>
+            </tbody>
+        </table><!-- Summary -->
+        <table style="border-collapse: collapse; border: 0px solid rgb(0, 0, 0); width: 100%;">
+            <tbody>
+                <tr>
+                    <td class="total" colspan="1" style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Subtotal:</span></td>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0); text-align: right;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">$778.24</span></td>
+                </tr>
+                <tr>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Shipping:</span></td>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0); text-align: right;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">$0.00</span></td>
+                </tr>
+                <tr>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Sales Tax:</span></td>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">$0.00</span></td>
+                </tr>
+                <tr>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0);"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;"><strong>Total:</strong></span></td>
+                    <td class="total" style="border: 0px solid rgb(0, 0, 0); text-align: right;"><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;"><strong>$778.24</strong></span></td>
+                </tr>
+            </tbody>
+        </table><!-- Order Info -->
+        <h2><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Order &amp; Shipping Info</span></h2>
+        <table style="border-collapse: separate; border: 0px solid rgb(0, 0, 0); border-spacing: 0px; width: 100%; margin: 0px auto;">
+            <tbody>
+                <tr>
+                    <td style="border: 0px solid rgb(0, 0, 0); width: 50.8646%;">
+                        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Order No.: ##alpha-4##</span></p>
+                        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Shipping Method: Standard</span></p>
+                        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Order Date: ##send-datetime##</span></p>
+                    </td>
+                    <td style="text-align: right; border: 0px solid rgb(0, 0, 0); width: 50%;">
+                        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Shipping To:- ##sender-name##, ##sender-address##</span></p>
+                        <p><span style="font-size: 20px; font-family: Verdana, Geneva, sans-serif;">Estimated Delivery: ##send-datetime##</span></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2 style="font-size: 16px; text-align: center;"><span style="font-size: 22px; font-family: Verdana, Geneva, sans-serif;"><br></span></h2>
+        <h2 style="font-size: 16px; text-align: center;"><span style="font-size: 22px; font-family: Verdana, Geneva, sans-serif;"><br></span></h2>
+        <h2 style="font-size: 16px; text-align: center;"><span style="font-size: 18px; font-family: Verdana, Geneva, sans-serif;"><strong>Need Help?</strong></span></h2>
+        <p style="text-align: center;"><span style="font-size: 18px; font-family: Verdana, Geneva, sans-serif;">Call our &nbsp;support: ##toll-free-number##</span></p><!-- Footer -->
+        <div class="footer" style="text-align: center;"><span style="font-size: 18px; font-family: Verdana, Geneva, sans-serif;">PayPal Inc. | 2211 North First Street, San Jose, CA 95131<br>Unsubscribe &bull; Customer Support</span></div>
+    </div>
+</body>
+
+</html>
